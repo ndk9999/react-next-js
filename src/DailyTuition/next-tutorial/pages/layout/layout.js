@@ -10,9 +10,9 @@ export default function Layout({children, home}) {
 
             <header>
                 {home ? (
-                    <h1>Home Page Header</h1>
+                    <div>Home Page Header</div>
                 ) : (
-                    <h1>Other Page Header</h1>
+                    <div>Other Page Header</div>
                 )}
             </header>
 
