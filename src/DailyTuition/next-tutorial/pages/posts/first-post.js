@@ -2,10 +2,11 @@ import Head from 'next/head'
 import Image from 'next/image'
 import nextjs from '../../public/images/nextjs.png'
 import styles from '../../styles/sass/style.module.scss'
+import Layout from '../layout/layout.js'
 
 export default function FirstPost() {
     return (
-        <>
+        <Layout>
             <Head>
                 <title>Next.js First Post</title>
             </Head>
@@ -28,6 +29,6 @@ export default function FirstPost() {
                 width={300}
                 height={300}
             />
-        </>
+        </Layout>
     )
 }

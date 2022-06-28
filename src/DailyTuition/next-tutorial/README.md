@@ -1,3 +1,5 @@
+Video Playlist: https://www.youtube.com/watch?v=hz95FuVA5gI&list=PLynWqC6VC9KOvExUuzhTFsWaxnpP_97BD&index=8&ab_channel=DailyTuition
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
