@@ -3,7 +3,7 @@ export default function Users({users}) {
         <article>
             {
                 users.map(u => (
-                    <div>
+                    <div key={u.id}>
                         <h1>{u.name}</h1>
                     </div>
                 ))

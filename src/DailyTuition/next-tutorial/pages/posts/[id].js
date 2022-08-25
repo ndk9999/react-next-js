@@ -1,8 +1,18 @@
 import {getAllPosts} from '../lib/helper.js'
+import {useRouter} from 'next/router'
 
 export default function Post({posts}) {
+    const router = useRouter();
+    const {id} = router.query;
+
+    console.log(id);
+
     return (
         <article>
+            <button onClick={() => router.push('/posts/users')}>
+                Post
+            </button>
+
             {
                 posts.map(p => (
                     <div key={p.id}>
