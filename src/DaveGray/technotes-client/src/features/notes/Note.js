@@ -11,7 +11,7 @@ const Note = ({noteId}) => {
 
     if (note) {
         const handleEdit = () => navigate(`/dash/notes/${noteId}`);
-        const created = new Date(note.createAt).toLocaleString('en-US', {day: 'numeric', month: 'long'});
+        const created = new Date(note.createdAt).toLocaleString('en-US', {day: 'numeric', month: 'long'});
         const updated = new Date(note.updatedAt).toLocaleString('en-US', {day: 'numeric', month: 'long'});
 
         return (
