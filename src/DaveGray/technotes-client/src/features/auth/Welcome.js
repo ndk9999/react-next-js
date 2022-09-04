@@ -1,8 +1,10 @@
 import { Link } from 'react-router-dom';
+import useAuth from "../../hooks/useAuth";
 
 const Welcome = () => {
     const date = new Date();
     const today = new Intl.DateTimeFormat('en-US', { dateStyle: 'full', timeStyle: 'long' }).format(date);
+    const {username, isManager, isAdmin} = useAuth();
 
     const content = (
         <section className="welcome">
@@ -10,7 +12,7 @@ const Welcome = () => {
                 {today}
             </p>
             <h1>
-                Welcome!
+                Welcome {username}!
             </h1>
             <p>
                 <Link to="/dash/notes">View techNotes</Link>
@@ -18,12 +20,8 @@ const Welcome = () => {
             <p>
                 <Link to="/dash/notes/new">Add New Note</Link>
             </p>
-            <p>
-                <Link to="/dash/users">View User Settings</Link>
-            </p>
-            <p>
-                <Link to="/dash/users/new">Add New User</Link>
-            </p>
+            {(isManager || isAdmin) && <p><Link to="/dash/users">View Users List</Link></p>}
+            {(isManager || isAdmin) && <p><Link to="/dash/users/new">Add New User</Link></p>}
         </section>
     );
     
