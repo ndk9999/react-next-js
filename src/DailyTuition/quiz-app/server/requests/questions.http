@@ -1,0 +1,14 @@
+@SERVER_URL = http://localhost:5000
+
+// Get all questions
+GET {{SERVER_URL}}/api/questions
+
+###
+
+// Create questions
+POST {{SERVER_URL}}/api/questions
+
+###
+
+// Create questions
+DELETE {{SERVER_URL}}/api/questions

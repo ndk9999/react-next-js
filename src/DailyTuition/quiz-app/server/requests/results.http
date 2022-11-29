@@ -1,0 +1,23 @@
+@SERVER_URL = http://localhost:5000
+
+// Get all results
+GET {{SERVER_URL}}/api/results
+
+###
+
+// Save user results
+POST {{SERVER_URL}}/api/results
+Content-Type: application/json
+
+{
+    "userId": "Username",
+    "userAnswers": [0,1,2],
+    "attempts": 0,
+    "earnedPoints": 0,
+    "finalResult": "Passed"
+}
+
+###
+
+// Delete all user results
+DELETE {{SERVER_URL}}/api/results
