@@ -1,0 +1,23 @@
+.Project-container {
+    width: 50%;
+    margin: 10px auto;
+}
+
+.Project-avatar {
+    width: 150px;
+}
+
+.Project-container > ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.Project-container > ul > li {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Project-container > ul > li > span {
+    font-weight: 600;
+}
